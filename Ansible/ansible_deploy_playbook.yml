@@ -1,0 +1,25 @@
+---
+- name: Undeploy Apache Webserver
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Stop apache2 service
+      service:
+        name: apache2
+        state: stopped
+
+    - name: Remove apache2 package
+      apt:
+        name: apache2
+        state: absent
+
+    - name: Remove custom index.html (if exists)
+      file:
+        path: /var/www/html/index.html
+        state: absent
+
+    - name: Restore Apache default port configuration
+      lineinfile:
+        path: /etc/apache2/ports.conf
+        regexp: '^Listen 8080'
+        line: 'Listen 80'
