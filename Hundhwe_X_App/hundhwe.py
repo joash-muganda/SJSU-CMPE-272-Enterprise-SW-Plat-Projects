@@ -50,13 +50,13 @@ def fetch_user_details():
     URL = "https://api.twitter.com/2/users/me"
     response = requests.get(URL, auth=auth_api)
     
-    if response.status_code == 200:  
-        user_data = response.json()
-        logger.info(f"User Data: {user_data}")  
-        return user_data
+    if response.status_code == 200:
+        user_data = response.json().get("data", {})
+        logger.info(f"User Data: {user_data}")
+        return user_data  # Returning the 'data' part of the response
     else:
         error_message = f"Failed to fetch user details. Status code: {response.status_code}, Message: {response.text}"
-        logger.error(error_message)  
+        logger.error(error_message)
         return {"error": error_message}
 
 
