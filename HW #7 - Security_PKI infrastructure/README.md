@@ -27,5 +27,5 @@ This repository documents the process of designing and building a PKI (Public Ke
 - Scripts for creating Root CA, Signing CA, and TLS certificate.
 - Configuration details for setting up Apache Tomcat with the TLS certificate.
 
-For detailed scripts and configuration steps, please refer to the attached documentation: [Security Documentation]([file-z4iiNlMABlSDVhhnIBRyVxhO](https://github.com/joash-muganda/SJSU-CMPE-272-Enterprise-SW-Plat-Projects/blob/main/HW%20%237%20-%20Security_PKI%20infrastructure/PKI_infastructure_Design.pdf)https://github.com/joash-muganda/SJSU-CMPE-272-Enterprise-SW-Plat-Projects/blob/main/HW%20%237%20-%20Security_PKI%20infrastructure/PKI_infastructure_Design.pdf).
+For detailed scripts and configuration steps, please refer to the attached documentation: [Security Documentation]([file-z4iiNlMABlSDVhhnIBRyVxhO](https://github.com/joash-muganda/SJSU-CMPE-272-Enterprise-SW-Plat-Projects/blob/main/HW%20%237%20-%20Security_PKI%20infrastructure/PKI_infastructure_Design.pdf)https://github.com/joash-muganda/SJSU-CMPE-272-Enterprise-SW-Plat-Projects/blob/main/HW%20%237%20-%20Security_PKI%20infrastructure/PKI_infastructure_Design.pdf]).
 
