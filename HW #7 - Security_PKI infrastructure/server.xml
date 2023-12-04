@@ -91,7 +91,7 @@
            maxThreads="150" SSLEnabled="true"
            scheme="https" secure="true" clientAuth="false"
            sslProtocol="TLS" keystoreFile="conf/keystore.p12"
-           keystorePass="Faryl@2023" keystoreType="PKCS12" 
+           keystorePass="yourpass" keystoreType="PKCS12" 
 />
 
 
